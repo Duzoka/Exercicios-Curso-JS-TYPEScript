@@ -1,11 +1,12 @@
-let numero = Number(prompt("Escreva seu número aqui"));
+const numero = Number(prompt("Escreva seu número aqui"));
 console.log(numero)
 
-let campoDeTexto = document.getElementById("campoDeTexto")
+const numeroTitulo = document.getElementById("numero-titulo");
+const campoDeTexto = document.getElementById("campoDeTexto");
+
+numeroTitulo.innerHTML = numero
 
 campoDeTexto.innerHTML = `
-
-<h1>Seu número é ${numero}</h1> <br>
 
 Rayz quadrada: ${numero ** (1/2)} <br>
 
